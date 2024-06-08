@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".InformationScreen"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar to open Navigation Drawer -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_purple"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"
+            android:padding="2dp">
+
+            <!-- Nested Scroll View to display all lists -->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/toolbar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="About Melody"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            android:gravity="center"/>
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/banner_image"
+                        android:layout_width="225dp"
+                        android:layout_height="225dp"
+                        android:layout_marginStart="80dp"
+                        android:src="@drawable/logo2"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginTop="16dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:text="Melody Music is a music streaming app designed using Android Studio."
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:lineHeight="24dp"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:text="You can listen to songs and podcasts ranging from various genres and artists."
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:lineHeight="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp"
+                        android:text="Click on the instructions button below and know how to use this app."
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:lineHeight="24dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+                    <Button
+                        android:id="@+id/instructionbutton"
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="35dp"
+                        android:backgroundTint="@color/light_purple"
+                        android:text="Instructions"/>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Navigation View-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemIconTint="@color/dark_purple"
+        app:itemTextColor="@color/dark_purple"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Melody Music</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="chaleya">Chaleya</string>
+    <string name="heeriye">heeriye</string>
+    <string name="gangnamstyle">gangnamstyle</string>
+    <string name="staywithme">stay with me</string>
+    <string name="gulimata">guli mata</string>
+    <string name="mydad">My dad</string>
+    <string name="supershy">super shy</string>
+    <string name="thousandyears">thousand years</string>
+    <string name="yimmyyimmy">yimmy yimmy</string>
+    <string name="blindinglights">blinding lights</string>
+</resources>
