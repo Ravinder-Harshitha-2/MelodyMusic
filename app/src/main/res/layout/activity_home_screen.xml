@@ -68,7 +68,8 @@
                         android:layout_below="@id/toolbar"
                         android:layout_marginTop="18dp"
                         android:textColor="@color/white"
-                        android:textSize="22sp" />
+                        android:textSize="22sp"
+                        android:gravity="center"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -81,7 +82,8 @@
                         android:padding="3dp"
                         android:textColor="@color/white"
                         android:textSize="18dp"
-                        android:fontFamily="monospace"/>
+                        android:fontFamily="monospace"
+                        android:gravity="center"/>
 
                     <View
                         android:layout_width="match_parent"
