@@ -39,7 +39,6 @@ class MainScreen : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
-                // Open/close the navigation drawer when the navigation icon is clicked
                 if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                     drawerLayout.closeDrawer(GravityCompat.START)
                 } else {
@@ -51,31 +50,27 @@ class MainScreen : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+
     private fun setupDrawer() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Handle menu item clicks here
             when (menuItem.itemId) {
                 R.id.nav_home -> {
-                    // Start HomeActivity
                     startActivity(Intent(this, HomeScreen::class.java))
                 }
 
                 R.id.nav_songs -> {
-                    // Start GalleryActivity
                     startActivity(Intent(this, SongsScreen::class.java))
                 }
 
                 R.id.nav_podcasts -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, PodcastsScreen::class.java))
                 }
 
                 R.id.nav_musicvideos -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, MusicVideosScreen::class.java))
                 }
             }
-            // Close the drawer after handling click
+
             drawerLayout.closeDrawers()
             true
         }

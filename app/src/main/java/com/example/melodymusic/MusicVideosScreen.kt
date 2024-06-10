@@ -25,6 +25,7 @@ class MusicVideosScreen : AppCompatActivity() {
         recyclerView = findViewById(R.id.musicvideosrecyclerview)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+        // List of song names and youtube hyperlinks to view the videos
         val musicVideosList = listOf(
             MusicVideos(R.drawable.odimaga, "Odimaga", "https://youtu.be/xmVITsClKvw?si=HEnf4GYko0sn6Qzj"),
             MusicVideos(R.drawable.biba, "Biba Nachdi", "https://youtu.be/UhYRlI_bpJQ?si=kOQf7aWllJi4cugq"),
@@ -38,7 +39,7 @@ class MusicVideosScreen : AppCompatActivity() {
             MusicVideos(R.drawable.gangnamstyle, "Gangnam Style", "https://youtu.be/9bZkp7q19f0?si=VGzlGcgyDvAeUfjZ"),
             )
 
-        // Create and set adapter
+        // Adapter
         musicVideoAdapter = MusicVideoAdapter(this, musicVideosList)
         recyclerView.adapter = musicVideoAdapter
 
@@ -55,10 +56,10 @@ class MusicVideosScreen : AppCompatActivity() {
         setupDrawer()
     }
 
+    // function to handle the open and close of navigation bar
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
-                // Open/close the navigation drawer when the navigation icon is clicked
                 if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                     drawerLayout.closeDrawer(GravityCompat.START)
                 } else {
@@ -70,36 +71,31 @@ class MusicVideosScreen : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    // function to handle the movement between activities using intents
     private fun setupDrawer() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Handle menu item clicks here
             when (menuItem.itemId) {
                 R.id.nav_home -> {
-                    // Start HomeActivity
                     startActivity(Intent(this, HomeScreen::class.java))
                 }
 
                 R.id.nav_songs -> {
-                    // Start GalleryActivity
                     startActivity(Intent(this, SongsScreen::class.java))
                 }
 
                 R.id.nav_podcasts -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, PodcastsScreen::class.java))
                 }
 
                 R.id.nav_musicvideos -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, MusicVideosScreen::class.java))
                 }
 
                 R.id.nav_information -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, InformationScreen::class.java))
                 }
             }
-            // Close the drawer after handling click
+
             drawerLayout.closeDrawers()
             true
         }

@@ -38,6 +38,7 @@ class HomeScreen : AppCompatActivity() {
         recyclerView = findViewById(R.id.newsongs)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
+        // list to display songs
         val songList = listOf(
             Songs(R.drawable.mydad, "My Dad", MyDad::class.java),
             Songs(R.drawable.blindinglights, "Blinding Lights", BlindingLights::class.java),
@@ -47,6 +48,7 @@ class HomeScreen : AppCompatActivity() {
             Songs(R.drawable.chaleya, "Chaleya", Chaleya::class.java),
         )
 
+        // Adapter
         songAdapter = SongAdapter(this, songList)
         recyclerView.adapter = songAdapter
 
@@ -62,6 +64,7 @@ class HomeScreen : AppCompatActivity() {
 
         setupDrawer()
 
+        // function to display images and intents to take them to corresponding activity
         val imageView1: ImageView = findViewById(R.id.chaleya)
         val imageView2: ImageView = findViewById(R.id.blindinglights)
         val imageView3: ImageView = findViewById(R.id.thousandyears)

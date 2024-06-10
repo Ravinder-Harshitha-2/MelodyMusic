@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         getStartedButton = findViewById(R.id.getstartedbutton)
 
+        // function to take the person to the next activity
         getStartedButton.setOnClickListener {
             val intent = Intent(this, NameScreen::class.java)
             startActivity(intent)

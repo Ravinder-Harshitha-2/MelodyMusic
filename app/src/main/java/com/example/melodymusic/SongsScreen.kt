@@ -72,39 +72,31 @@ class SongsScreen : AppCompatActivity() {
 
     private fun setupDrawer() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Handle menu item clicks here
             when (menuItem.itemId) {
                 R.id.nav_home -> {
-                    // Start HomeActivity
                     startActivity(Intent(this, HomeScreen::class.java))
                 }
 
                 R.id.nav_songs -> {
-                    // Start GalleryActivity
                     startActivity(Intent(this, SongsScreen::class.java))
                 }
 
                 R.id.nav_podcasts -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, PodcastsScreen::class.java))
                 }
 
                 R.id.nav_musicvideos -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, MusicVideosScreen::class.java))
                 }
 
                 R.id.nav_information -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, InformationScreen::class.java))
                 }
 
                 R.id.nav_information -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, InformationScreen::class.java))
                 }
             }
-            // Close the drawer after handling click
             drawerLayout.closeDrawers()
             true
         }
