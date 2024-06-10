@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <!-- Back button as an image view to go back to the corresponding main screen -->
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
@@ -37,12 +38,14 @@
         android:gravity="center"
         android:orientation="horizontal">
 
+        <!-- Text view that contains the start timer for the podcast -->
         <TextView
             android:id="@+id/textViewStartTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"/>
 
+        <!-- The seek bar for the podcast -->
         <SeekBar
             android:id="@+id/seekbar"
             android:layout_width="240dp"
@@ -50,6 +53,7 @@
             android:progressTint="@color/white"
             android:thumbTint="#CCCCCC"/>
 
+        <!-- Text view that contains the timer for the whole podcast -->
         <TextView
             android:id="@+id/textViewEndTime"
             android:layout_width="wrap_content"
@@ -66,6 +70,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
+        <!-- Play previous track button as an image view to play the previous podcast -->
         <ImageView
             android:id="@+id/playprevButton"
             android:src="@drawable/playprev"
@@ -75,6 +80,9 @@
             android:backgroundTint="#000000"
             android:scaleType="fitXY"/>
 
+        <!-- Pause button as an image view to pause the podcast but with the
+        image view of a play button present in the function to enable the user
+        to pause and play the podcast with a click-->
         <ImageView
             android:id="@+id/pauseButton"
             android:src="@drawable/pausebuttonpurple"
@@ -84,6 +92,7 @@
             android:backgroundTint="#000000"
             android:scaleType="fitXY"/>
 
+        <!-- Play next track button as an image view to play the next podcast -->
         <ImageView
             android:id="@+id/playnextButton"
             android:src="@drawable/playnext"
