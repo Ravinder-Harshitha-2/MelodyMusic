@@ -7,6 +7,7 @@
     tools:context=".NameScreen"
     android:background="@drawable/namebg">
 
+    <!-- button to clear the text entered -->
     <Button
         android:id="@+id/clearButton"
         android:layout_width="wrap_content"
@@ -22,6 +23,7 @@
         app:layout_constraintHorizontal_bias="0.276"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- button to enter the text and proceed to next activity -->
     <Button
         android:id="@+id/enterButton"
         android:layout_width="wrap_content"
@@ -33,6 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Edit text to enter name -->
     <EditText
         android:id="@+id/editText"
         android:layout_width="210dp"
@@ -47,6 +50,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- text to guide user -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"

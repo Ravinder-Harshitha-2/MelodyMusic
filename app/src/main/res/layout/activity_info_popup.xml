@@ -7,20 +7,7 @@
     tools:context=".InfoPopup"
     android:background="@color/light_black">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="169dp"
-        android:layout_height="35dp"
-        android:text="INSTRUCTIONS"
-        android:textAlignment="center"
-        android:textColor="@color/light_purple"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
-
+    <!-- Back Button -->
     <Button
         android:id="@+id/closeButton"
         android:layout_width="wrap_content"
@@ -34,6 +21,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:layout_constraintVertical_bias="0.925" />
+
+    <!-- Text Views to display instructions on how to use the app-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="169dp"
+        android:layout_height="35dp"
+        android:text="INSTRUCTIONS"
+        android:textAlignment="center"
+        android:textColor="@color/light_purple"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
 
     <TextView
         android:id="@+id/textView2"

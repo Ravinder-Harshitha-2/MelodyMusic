@@ -7,6 +7,7 @@
     tools:context=".MainActivity"
     android:background="@drawable/startingbg">
 
+    <!-- button to got to the next screen -->
     <Button
         android:id="@+id/getstartedbutton"
         android:layout_width="316dp"

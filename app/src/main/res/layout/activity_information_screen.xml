@@ -32,7 +32,7 @@
             android:id="@+id/fragment_container"
             android:padding="2dp">
 
-            <!-- Nested Scroll View to display all lists -->
+            <!-- Nested Scroll View to display items if scrolling is needed -->
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,6 +49,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+                        <!-- Heading -->
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
