@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <!-- List items to be displayed in a recycler view-->
+    <!-- List items to be displayed in a recycler view in podcasts screen -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
