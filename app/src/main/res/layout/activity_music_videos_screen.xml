@@ -20,7 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/dark_purple"
+            android:background="@color/light_black"
             android:elevation="4dp"
             android:minHeight="?attr/actionBarSize"
             app:titleTextColor="@android:color/white" />
@@ -31,6 +31,7 @@
             android:id="@+id/fragment_container"
             android:padding="2dp">
 
+            <!-- Nested Scroll View to display the list with scroll -->
             <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -59,6 +60,7 @@
 
                     </RelativeLayout>
 
+                    <!-- Recycler Scroll View to display all songs -->
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/musicvideosrecyclerview"
                         android:layout_width="match_parent"

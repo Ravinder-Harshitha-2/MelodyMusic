@@ -7,4 +7,5 @@
     tools:context=".SplashScreen"
     android:background="@drawable/mainbg">
 
+    <!-- Splash Screen -->
 </androidx.constraintlayout.widget.ConstraintLayout>

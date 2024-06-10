@@ -8,6 +8,7 @@
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+    <!-- Logo displayed in the navigation drawer -->
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -19,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
 
+    <!-- Moto displayed below the logo -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

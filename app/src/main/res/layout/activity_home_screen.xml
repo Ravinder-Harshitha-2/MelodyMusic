@@ -115,6 +115,7 @@
                             android:padding="10dp"
                             android:fontFamily="sans-serif-medium"/>
 
+                        <!-- Horizontal ScrollView for Popular Tracks -->
                         <HorizontalScrollView
                             android:layout_width="match_parent"
                             android:layout_height="180dp"

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn = "navigation_view">
 
+    <!-- Group containing list items fro navigation -->
     <group
         android:checkableBehavior="single">
 

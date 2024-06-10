@@ -6,6 +6,7 @@ import android.os.Bundle
 
 class SplashScreen : AppCompatActivity() {
     private val SPLASH_TIME_OUT: Long = 2000
+    // Code to enable splash screen
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)

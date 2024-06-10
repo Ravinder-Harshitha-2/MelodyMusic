@@ -30,6 +30,7 @@ class HomeScreen : AppCompatActivity() {
 
         textView = findViewById(R.id.textView)
 
+        // Shared preferences
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
         val text = sharedPreferences.getString("text", "")
         textView.text = "Welcome $text !"
@@ -140,35 +141,30 @@ class HomeScreen : AppCompatActivity() {
     }
 
     private fun setupDrawer() {
+        // Navigation enabled with intents
         navigationView.setNavigationItemSelectedListener { menuItem ->
-            // Handle menu item clicks here
             when (menuItem.itemId) {
                 R.id.nav_home -> {
-                    // Start HomeActivity
                     startActivity(Intent(this, HomeScreen::class.java))
                 }
 
                 R.id.nav_songs -> {
-                    // Start GalleryActivity
                     startActivity(Intent(this, SongsScreen::class.java))
                 }
 
                 R.id.nav_podcasts -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, PodcastsScreen::class.java))
                 }
 
                 R.id.nav_musicvideos -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, MusicVideosScreen::class.java))
                 }
 
                 R.id.nav_information -> {
-                    // Start SettingsActivity
                     startActivity(Intent(this, InformationScreen::class.java))
                 }
             }
-            // Close the drawer after handling click
+
             drawerLayout.closeDrawers()
             true
         }

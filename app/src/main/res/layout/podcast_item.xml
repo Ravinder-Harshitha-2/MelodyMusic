@@ -4,12 +4,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <!-- List items to be displayed in a recycler view-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp">
 
+        <!-- Image view to display podcast cover -->
         <ImageView
             android:id="@+id/podcastImageView"
             android:layout_width="60dp"
@@ -17,6 +19,7 @@
             android:layout_marginEnd="14dp"
             android:scaleType="centerCrop" />
 
+        <!-- Text view to display podcast name -->
         <TextView
             android:id="@+id/podcastTitleTextView"
             android:layout_width="wrap_content"
@@ -26,7 +29,7 @@
             android:textColor="@android:color/white" />
     </LinearLayout>
 
-    <!-- Divider View -->
+    <!-- Divider View to make it appear as a line to separate each list item -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

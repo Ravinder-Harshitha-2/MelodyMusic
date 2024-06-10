@@ -4,12 +4,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <!-- List items to be displayed in a recycler view-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="8dp">
 
+        <!-- Image view to display song cover -->
         <ImageView
             android:id="@+id/videoImageView"
             android:layout_width="60dp"
@@ -23,6 +25,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <!-- Text view to display song name -->
             <TextView
                 android:id="@+id/videoTitleTextView"
                 android:layout_width="wrap_content"
@@ -33,6 +36,7 @@
 
         </LinearLayout>
 
+        <!-- Button to direct the user towards the youtube music video -->
         <Button
             android:layout_marginStart="16dp"
             android:layout_marginTop="13dp"
@@ -44,7 +48,7 @@
 
     </LinearLayout>
 
-    <!-- Divider View -->
+    <!-- Divider View to make it appear as a line to separate each list item-->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

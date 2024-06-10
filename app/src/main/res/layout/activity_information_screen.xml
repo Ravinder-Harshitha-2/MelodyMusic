@@ -59,6 +59,7 @@
 
                     </RelativeLayout>
 
+                    <!-- The logo of the app -->
                     <ImageView
                         android:id="@+id/banner_image"
                         android:layout_width="225dp"
@@ -73,6 +74,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="25dp"/>
 
+                    <!-- Information about the app -->
                     <TextView
                         android:id="@+id/textView1"
                         android:layout_width="325dp"
@@ -113,6 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="35dp"/>
 
+                    <!-- Button with popup for instructions to use the app -->
                     <Button
                         android:id="@+id/instructionbutton"
                         android:layout_width="325dp"
